@@ -4,7 +4,7 @@ import ProfileCard from './profileCard'
 import Link from 'next/link'
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-const index = () => {
+const Index = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -115,4 +115,4 @@ const index = () => {
 }
 
 
-export default index
+export default Index

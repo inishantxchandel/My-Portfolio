@@ -16,7 +16,7 @@ const experience=[
     },
    
 ]
-const index = () => {
+const Index = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
       triggerOnce: true,
@@ -86,4 +86,4 @@ const index = () => {
 }
 
 
-export default index
+export default Index

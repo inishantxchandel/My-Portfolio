@@ -15,7 +15,7 @@ const experience = [
     "description": "As part of my responsibilities in the Next.js frontend development team, I successfully addressed UI fixes and resolved bugs to improve the user experience. By diagnosing the issues, I identified broken elements that were impacting the functionality and usability of the application.I conducted thorough investigations into the reported bugs, analyzing the codebase and identifying the root causes of the issues. Through meticulous debugging and testing, I implemented effective solutions to rectify the problems and restore proper functionality.Furthermore, I paid close attention to UI fixes, ensuring that the visual elements of the application were aligned with the intended design and met the desired user experience. I carefully reviewed and adjusted layouts, styles, and interactions to enhance the overall look and feel of the frontend."
   }
 ]
-const index = () => {
+const Index = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -86,4 +86,4 @@ const index = () => {
 }
 
 
-export default index
+export default Index

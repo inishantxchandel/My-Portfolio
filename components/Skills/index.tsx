@@ -28,7 +28,7 @@ const skills=[
 
 ]
 
-const index = () => {
+const Index = () => {
   return (
     <div id="skills" className='bg-portfolio-blue'>
         <h1 className='text-center text-3xl text-white py-8 tracking-widest border-b border-white font-light'>Skills</h1>
@@ -48,4 +48,4 @@ const index = () => {
 }
 
 
-export default index
+export default Index

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link';
-const index = () => {
+const Index = () => {
     const navigation = {
         social: [
           {
@@ -117,4 +117,4 @@ const index = () => {
 }
 
 
-export default index
+export default Index

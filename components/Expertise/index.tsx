@@ -15,7 +15,7 @@ const expertise=[
         description:"Python is a general purpose programming language that is used for web development, data science, machine learning, and more.",
     }]
 
-const index = () => {
+const Index = () => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
       triggerOnce: true,
@@ -46,7 +46,7 @@ const index = () => {
             expertise.map((expert,index)=>{
                 return(
                     <motion.div variants={leftcardVariants}
-                    key={index}
+                    
                     initial="hidden"
                     animate={controls}
                     transition={{ duration: 1.0, delay: 0.4 }}                         ref={ref}
@@ -66,4 +66,4 @@ const index = () => {
 }
 
 
-export default index
+export default Index
