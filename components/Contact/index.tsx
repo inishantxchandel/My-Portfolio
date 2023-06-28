@@ -6,7 +6,8 @@ const Index = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');    const navigation = {
+  const [message, setMessage] = useState('');
+      const navigation = {
         social: [
           {
             name: "GitHub",
@@ -71,11 +72,15 @@ const Index = () => {
         Email:email,
         Message:message
   };
-  axios.post(`https://sheet.best/api/sheets/4e3c1d84-a1b6-4c77-93ca-6492b701dffd`,data)
+  try{
+  axios.post(`${process.env.NEXT_PUBLIC_SHEET_URL}`,data)
   .then((response) => {
     console.log(response);
   }
-  )
+  )}
+  catch(error){
+      console.log(error);
+  }
 }
 
     return (
