@@ -40,3 +40,5 @@ next-env.d.ts
 /public/sitemap-0.xml
 
 pnpm-lock.yaml
+
+.prettierignore
