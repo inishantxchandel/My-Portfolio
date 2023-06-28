@@ -99,9 +99,9 @@ const index = () => {
 
                 </div>
                 <div className='max-w-4xl  mx-auto flex justify-center gap-6 items-center text-center py-4'>
-          {navigation.social.map((item) => (
+          {navigation.social.map((item,index) => (
             <Link
-              key={item.name}
+              key={index}
               href={item.href}
               className="text-black hover:cursor-pointer transition-all hover:scale-125"
             >

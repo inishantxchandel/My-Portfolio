@@ -46,11 +46,12 @@ const index = () => {
             expertise.map((expert,index)=>{
                 return(
                     <motion.div variants={leftcardVariants}
+                    key={index}
                     initial="hidden"
                     animate={controls}
                     transition={{ duration: 1.0, delay: 0.4 }}                         ref={ref}
                     id="experience">
-                    <div key={index} className='  px-2 md:px-4 py-4 md:py-20'>
+                    <div  className='  px-2 md:px-4 py-4 md:py-20'>
                         <h1 className='text-portfolio-blue text-xl font-medium'>{expert.title}</h1>
                         <p className='text-portfolio-blue text-sm font-light mt-2'>{expert.description}</p>
                     </div>
