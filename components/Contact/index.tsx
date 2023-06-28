@@ -81,6 +81,11 @@ const Index = () => {
   catch(error){
       console.log(error);
   }
+  setEmail('');
+  setFirstName('');
+  setLastName('');
+  setMessage('');
+  
 }
 
     return (
