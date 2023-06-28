@@ -106,9 +106,9 @@ const Index = () => {
           animate={controls}
           transition={{ duration: 1.0, delay: 0.4 }}
           className=' max-w-xl  mx-auto px-2 md:px-0 py-10  md:py-20 text-portfolio-blue text-center'>
-          <h1 className='tracking-wide text-3xl font-light'>Hello! I'm Nishant</h1>
+          <h1 className='tracking-wide text-3xl font-light'>Hello! I&apos;m Nishant</h1>
           <p className='font-light text-sm md:text-base mt-4 md:mt-8 leading-relaxed'>
-            I am a skilled and versatile full stack developer, adept in both front-end and back-end development. With a deep-rooted passion for coding and a knack for problem-solving, I am committed to delivering top-notch solutions. By staying abreast of the latest technologies and industry trends, I strive to create captivating and user-friendly applications. Allow me to leverage my expertise and experience to craft innovative and efficient solutions tailored to your needs. Together, let's bring your vision to life!</p>
+            I am a skilled and versatile full stack developer, adept in both front-end and back-end development. With a deep-rooted passion for coding and a knack for problem-solving, I am committed to delivering top-notch solutions. By staying abreast of the latest technologies and industry trends, I strive to create captivating and user-friendly applications. Allow me to leverage my expertise and experience to craft innovative and efficient solutions tailored to your needs. Together, let&apos;s bring your vision to life!</p>
         </motion.div> </div>
     </div>
   )

@@ -45,7 +45,7 @@ const Index = () => {
         {
             expertise.map((expert,index)=>{
                 return(
-                    <motion.div variants={leftcardVariants}
+                    <motion.div key={index} variants={leftcardVariants}
                     
                     initial="hidden"
                     animate={controls}
