@@ -2,9 +2,12 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://inishantxchandel.github.io/My-Portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy" : "gh-pages -d build",
+
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,9 +16,11 @@
     "@types/node": "20.3.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "axios": "^1.4.0",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "framer-motion": "^10.12.17",
+    "google-spreadsheet": "^4.0.1",
     "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -25,6 +30,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
   }

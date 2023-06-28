@@ -1,8 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link';
+import axios from 'axios';
 const Index = () => {
-    const navigation = {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');    const navigation = {
         social: [
           {
             name: "GitHub",
@@ -58,6 +62,22 @@ const Index = () => {
     
         ],
       };
+      
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+
+   const data={
+        Name:firstName,
+        Email:email,
+        Message:message
+  };
+  axios.post(`https://sheet.best/api/sheets/4e3c1d84-a1b6-4c77-93ca-6492b701dffd`,data)
+  .then((response) => {
+    console.log(response);
+  }
+  )
+}
+
     return (
         <div id="contact">
             <h1 className='text-center py-8 text-portfolio-blue text-3xl border-b border-white bg-zinc-100 tracking-widest font-light'>Contact Me</h1>
@@ -66,23 +86,23 @@ const Index = () => {
                     <div className='md:grid grid-cols-2 md:gap-4'>
                         <div>
                             <label className='block text-portfolio-blue font-light text-sm  '>First Name</label>
-                            <input className='mt-2 border w-full px-2 border-black' type='text' />
+                            <input className='mt-2 border w-full px-2 border-black' type='text' value={firstName} onChange={(e)=>setFirstName(e.target.value)} />
                         </div>
                         <div className='mt-4 md:mt-0'>
                             <label className='block text-portfolio-blue font-light text-sm '>Last Name</label>
-                            <input className='mt-2 border px-2 w-full border-black' type='text' />
+                            <input className='mt-2 border px-2 w-full border-black' value={lastName} onChange={(e)=>setLastName(e.target.value)} type='text' />
                         </div>
 
                     </div>
                     <div className='mt-4'>
                         <label className='block text-portfolio-blue  font-light text-sm '>Email*</label>
-                        <input className='mt-2 border w-full px-2 border-black required col-span-1' type='email' />
+                        <input className='mt-2 border w-full px-2 border-black required col-span-1' value={email} onChange={(e)=>setEmail(e.target.value)} type='email' />
                     </div>
                     <div className='mt-4'>
                         <label className='block text-portfolio-blue  font-light text-sm '>Type your message here....</label>
-                        <textarea className='mt-2 border w-full px-2 border-black required col-span-1' rows={8} />
+                        <textarea className='mt-2 border w-full px-2 border-black required col-span-1' value={message} onChange={(e)=>setMessage(e.target.value)} rows={8} />
                     </div>
-                    <button className='bg-portfolio-blue text-center text-white py-4 w-full'>Submit</button>
+                    <button onClick={handleSubmit} className='bg-portfolio-blue text-center text-white py-4 w-full'>Submit</button>
 
                 </form>
                 <div className='mx-8 md:mx-0 md:ml-20 py-10'>
