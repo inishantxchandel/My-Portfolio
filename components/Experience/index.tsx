@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 const experience = [
   {
     "time": "Sep-2022 to Jul-2023",
-    "role": "Software Engineer",
+    "role": "Software Engineer Intern",
     "company": "Future First Immigration",
     "description": "I contributed to the development of Tootler, a comprehensive platform that includes a chatbot, SOP generator, and LOR generator. Utilizing advanced AI techniques and algorithms, Tootler simplifies the handling of SOPs, LORs, and immigration inquiries. The chatbot component enables seamless interaction, providing users with information and support related to SOPs, LORs, and immigration processes. Powered by natural language processing and machine learning, the chatbot delivers accurate responses, enhancing the overall user experience.Tootler also incorporates SOP and LOR generators, automating the creation of tailored SOPs and LORs. These tools streamline the process, reducing time and effort traditionally required.Throughout development, I conducted testing, participated in code reviews, and provided feedback to enhance Tootler's functionality and reliability.Tootler's integrated features, including the chatbot, SOP generator, and LOR generator, revolutionize SOP, LOR, and immigration handling, saving time and ensuring high-quality documents with reliable support."
   },
