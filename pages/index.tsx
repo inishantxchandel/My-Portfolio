@@ -8,7 +8,7 @@ import Contact from "@/components/Contact"
 import Head from "next/head"
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
     <Head>
         <title>My Portfolio</title>
         <meta name="description" content="Check out my amazing portfolio showcasing my skills and projects." />
@@ -20,6 +20,6 @@ export default function Home() {
     <Skills/>
     <Expertise/>
     <Contact/>
-    </>
+    </div>
   )
 }
