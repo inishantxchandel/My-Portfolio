@@ -8,7 +8,7 @@ const skills=[
         name:"Redux",
     },
     {
-        name:"Pyhton",
+        name:"Python",
     },
     {
         name:"FastAPI",

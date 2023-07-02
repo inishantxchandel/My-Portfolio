@@ -11,7 +11,7 @@ const expertise=[
         description:"Redux is a state management library for JavaScript applications. It helps in managing the state of the application in a predictable manner.",
     },
     {
-        title:"Pyhton",
+        title:"Python",
         description:"Python is a general purpose programming language that is used for web development, data science, machine learning, and more.",
     }]
 
